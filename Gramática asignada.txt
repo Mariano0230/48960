@@ -1,0 +1,16 @@
+La gramática asignada está en ECMAScript que describe una porción reducida y adaptada del lenguaje JavaScript
+
+Program ::= { Statement }
+Statement ::= ArrayDeclaration | ForStatement | ConsoleStatement
+ArrayDeclaration ::= "let" Identifier "=" "[" [ ExpressionList ] "]" ";"
+ExpressionList ::= Expression { "," Expression }
+ForStatement ::= "for" "(" AssignmentStatement Expression ";" AssignmentStatement ")" Block
+AssignmentStatement ::= Identifier "=" Expression
+ConsoleStatement ::= "console" "." "log" "(" Expression ")" ";"
+Block ::= "{" { Statement } "}"
+Expression ::= Term { ("+" | "-" | "*" | "/") Term }
+Term ::= Identifier | Number | "(" Expression ")"
+Identifier ::= letter { letter | digit | "_" }
+Number ::= digit { digit }
+letter ::= "a" | ... | "z" | "A" | ... | "Z"
+digit ::= "0" | ... | "9"
