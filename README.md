@@ -14,13 +14,16 @@ Abrir una terminal (cmd, PowerShell, Bash, etc.).
 Ejecutar el siguiente comando para clonar el repositorio:
 
 git clone https://github.com/Mariano0230/48960
+
 cd https://github.com/Mariano0230/48960
 
 Instalar las dependencias necesarias:
 
 npm install
 
+
 Estructura del Proyecto
+
 
 Calculator.g4: Archivo con la gramática ANTLR.
 
@@ -42,7 +45,9 @@ Ejecución del Analizador
 
 Editar el archivo input.txt con el código que se desea analizar. Ejemplos válidos e inválidos se presentan a continuación.
 
+
 Ejecutar el proyecto con:
+
 
 npm start
 
@@ -76,7 +81,9 @@ Ejemplo Incorrecto 2 (uso de palabra no reconocida)
 
 print(a);
 
+
 Notas Finales
+
 
 El analizador indica la línea y el tipo de error en caso de encontrarse alguno.
 El proyecto sigue las especificaciones requeridas por la cátedra, incluyendo análisis, generación de tokens, árbol sintáctico e interpretación del código.
