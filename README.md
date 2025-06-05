@@ -15,7 +15,7 @@ Ejecutar el siguiente comando para clonar el repositorio:
 
 git clone https://github.com/Mariano0230/48960
 
-cd https://github.com/Mariano0230/48960
+cd 48960
 
 Instalar las dependencias necesarias:
 
